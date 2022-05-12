@@ -24,8 +24,6 @@ This project is an Inventory Tracking Web Application:
 
 Using basic [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) functionality:
 
-USAGE:
-
 -Create inventory items: 
 ```
 POST /product
@@ -89,5 +87,7 @@ GET /products
 ]
 ```
 
-View how the application works on Replit!!
+To view how the application works, you go can on Replit. Feel welcome to fork it and give it a try :) !!
+
+[Inventory Tracking Web Application](https://replit.com/@abegailtaitano/Shopify-Internship-2022#.replit)
 
