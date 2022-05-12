@@ -10,7 +10,7 @@ To run the code, follow these steps:
 
 1. git clone will copy the code here to your machine
 2. cd into the directory where you want the code stored
-3. `npm` i will install all required dependencies
+3. `npm` will install all required dependencies
 4. `node index.js` will start the server locally on `http://localhost:3000/` by default. 
 
 Test the endpoints using [Postman](https://www.postman.com/)
