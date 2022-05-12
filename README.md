@@ -86,8 +86,21 @@ GET /products
     }
 ]
 ```
+PROJECT DEMONSTRATION: 
 
 To view how the application works, you go can on Replit. Feel welcome to fork it and give it a try :) !!
 
+Please Note: You can test this on [Postman](https://www.postman.com/) 
+
+Just copy the repl url and then update the url to reach different API endpoints. Similiar to, if you were to do it locally
+```
+GET /products
+http://localhost:3000/inventory/products
+```
+Example to view a list of items:
+```
+GET /products
+https://Shopify-Internship-2022.abegailtaitano.repl.co/inventory/products
+```
 [Inventory Tracking Web Application](https://replit.com/@abegailtaitano/Shopify-Internship-2022#.replit)
 
