@@ -39,6 +39,19 @@ router.get("/products", (req, res) => {
   res.send(result);
 });
 
+//EDIT
+router.put("/product/:productId/edit", (req, res) => {
+  let productId = Number(req.params.productId);
+  let updatedItem = {};
+  if (storage.has(productId)) {
+    updatedItem = storage.get(productId);
+    updatedItem.name = req.body.name;
+    updatedItem.price = req.body.price;
+    storage.set(productId, updatedItem);
+    res.send("Item has been updated!");
+  }
+});
+
 //DELETE
 router.delete("/product/:productId", (req, res) => {
   let productId = Number(req.params.productId);
@@ -86,17 +99,6 @@ router.get("/deletedComments", (req, res) => {
   res.send(result);
 });
 
-//EDIT
-router.put("/product/:productId/edit", (req, res) => {
-  let productId = Number(req.params.productId);
-  let updatedItem = {};
-  if (storage.has(productId)) {
-    updatedItem = storage.get(productId);
-    updatedItem.name = req.body.name;
-    updatedItem.price = req.body.price;
-    storage.set(productId, updatedItem);
-    res.send("Item has been updated!");
-  }
-});
+
 
 module.exports = router;
