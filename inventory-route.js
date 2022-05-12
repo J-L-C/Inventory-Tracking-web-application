@@ -22,8 +22,6 @@ router.post("/product", (req, res) => {
     res.send("The item already exists.");
   } else {
     storage.set(req.body.id, req.body);
-    console.log(req.body);
-    console.log(req.body.id);
     res.send("Created!");
   }
 });
