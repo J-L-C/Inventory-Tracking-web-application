@@ -101,6 +101,4 @@ router.get("/deletedComments", (req, res) => {
   res.send(result);
 });
 
-
-
 module.exports = router;
