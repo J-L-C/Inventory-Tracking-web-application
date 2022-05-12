@@ -12,10 +12,6 @@ router.use(cors());
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
 
-router.use((req, res, next) => {
-  next();
-});
-
 //CREATE
 router.post("/product", (req, res) => {
   if (storage.has(req.body.id)) {
