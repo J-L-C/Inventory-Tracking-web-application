@@ -8,5 +8,5 @@ app.get('/',(req,res) => {
   })
 
 app.use('/inventory',inventoryRoutes);
-app.listen(port, ()=> console.log(`Listening on ${port}`));
+app.listen(port, ()=> console.log(`Listening on port ${port}`));
 
