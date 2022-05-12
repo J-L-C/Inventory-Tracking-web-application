@@ -4,7 +4,7 @@ const app = express();
 const port = 3000;
 
 app.get('/',(req,res) => {
-    res.send("Welcome to Abby\'s app!")
+    res.send("Welcome to Abby\'s Inventory Tracking web application!")
   })
 
 app.use('/inventory',inventoryRoutes);
