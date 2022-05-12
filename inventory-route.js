@@ -46,7 +46,9 @@ router.put("/product/:productId/edit", (req, res) => {
   if (storage.has(productId)) {
     updatedItem = storage.get(productId);
     updatedItem.name = req.body.name;
+    updatedItem.description = req.body.description;
     updatedItem.price = req.body.price;
+    updatedItem.quantity = req.body.quantity;
     storage.set(productId, updatedItem);
     res.send("Item has been updated!");
   }
