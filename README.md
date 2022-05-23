@@ -1,6 +1,4 @@
-# Shopify-Internship-2022
 
-Shopify Backend Developer Internship Challenge - 2022
 
 Welcome! Thank you for taking the time to look at my code for this application. 
 
