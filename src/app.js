@@ -1,4 +1,4 @@
-const inventoryRoutes = require('./inventory-route');
+const inventoryRoutes = require('./main/routes/inventory-route');
 const express = require('express');
 const app = express();
 const port = 3000;
